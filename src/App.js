@@ -3,15 +3,7 @@ import './App.css';
 import './style.css';
 import './component/componentstyle.css';
 import React, {useState} from "react";
-import LoginForm from './component/LoginFormComponent';
-import NavBar from './component/NavBar';
-import {useNavigate,BrowserRouter, Routes, Route} from 'react-router-dom';
-import RegisterFormComponent from './component/RegisterFormComponent.js';
-import Home from './component/Home';
-import NavBar2 from './component/NavBar2';
-import Slider from './component/Slider.js';
-import Footer from './component/Footer.js';
-import HomeProducts from './component/HomeProducts.js';
+import Index from './pages/Index';
 
 function App() {
 
@@ -29,7 +21,11 @@ function App() {
   // }
 
   return (
-    <div className="App">
+    <>
+    <Index></Index>
+    </>
+);
+   
       {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -37,11 +33,7 @@ function App() {
         
       </Routes>
     </BrowserRouter> */}
-  <NavBar></NavBar>
-  <NavBar2></NavBar2>
-  <Slider></Slider>
-  <HomeProducts></HomeProducts>
-  <Footer></Footer>
+
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -56,8 +48,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-    </div>
-  );
+  
 }
 
 export default App;
