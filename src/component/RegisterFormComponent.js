@@ -4,11 +4,6 @@ import './componentstyle.css';
 import Home from "./Home";
 
 const RegisterFormComponent = ({ isShowRegister,LoginClick }) => {
-    // const handleClick = (direction) => {
-    //     if (direction === "Next1") {
-    //       setSlideIndex(slideIndex > 0 ? slideIndex + 1 : 1);
-    //     } 
-    //   };
     const [otpBox,setOtpBox] = useState(false)
     const [passwordBox,setPasswordBox] = useState(false)
 
@@ -20,10 +15,6 @@ const RegisterFormComponent = ({ isShowRegister,LoginClick }) => {
         form1.style.left = "-450px";
         form2.style.top="-350px";
         form1.hidden()
-    }
-    const Next2 = () =>
-    {
-
     }
 
     const getOtp = () =>{
@@ -46,22 +37,11 @@ const RegisterFormComponent = ({ isShowRegister,LoginClick }) => {
                 <h1 className="login-text">
                     Sign Up
                 </h1><br></br>
-                    {/* <i className="fa fa-user icon"></i>
-                <input type="text" className="login-box" placeholder="USERNAME"></input>
-            <br></br><br></br> */}
+                 
 
                 <i className="fa fa-envelope icon"></i>
                 <input type="text" className="login-box" placeholder="EMAIL"></input>
                 <br></br><br></br>
-
-                {/* <i className="fa fa-key icon"></i>
-                <input type="password" name="password" className="login-box" placeholder="PASSWORD"></input><br>
-                </br><br></br>
-                
-                <i className="fa fa-key icon"></i>
-                <input type="password" name="password" className="login-box" placeholder="CONFIRM PASSWORD"></input><br>
-            </br><br></br><br></br> */}
-            {/* <a onClick={HandleClick()}>get otp</a> */}
                 <input type="submit" value="Get OTP" onClick={getOtp} className="login-btn"  direction="Next1"></input> <br></br>
                 <label>Already have an account?</label><span className="link" onClick={LoginClick}>Login here!</span>
             </form>}
